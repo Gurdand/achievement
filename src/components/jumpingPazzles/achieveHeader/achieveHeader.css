@@ -1,0 +1,12 @@
+.header {
+    display: grid;
+    border: 3px solid black;
+    grid-template-columns: 1fr 2fr 1fr;
+    background: linear-gradient(to top right, #8a6029,#272e34);
+}
+.header h1 {
+    text-align: left;
+}
+.header img {
+    margin-top: 10px;
+}

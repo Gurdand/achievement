@@ -1,0 +1,43 @@
+.achieve-left {
+    margin: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom right, black, rgba(0,0,0,0)) 1;
+}
+.achieve-right {
+    text-align: left;
+}
+.achieve {
+    display: grid;
+    grid-template-columns: 200px 600px;
+    background: linear-gradient(to bottom right, #079237, #272e34);
+    color: wheat;
+    border: 3px solid black;
+    margin: 10px;
+}
+.border {
+    background: linear-gradient(to right, rgb(0,0,0,0.8), rgb(0,0,0,0) );
+    text-indent: 20px;
+}
+.achieve-left .border {
+    text-indent: 0;
+}
+.achieve-logo {
+    height: 90px;
+    margin: 20px 0;
+}
+.revard {
+    height: 30px;
+    margin-top: 10px;
+}
+.big {
+    font-size: 30px;
+    color: white;
+}
+.achieve-left p {
+    margin: 5px;
+}
+.compass {
+    margin-bottom: -4px;
+    margin-right: 5px;
+}

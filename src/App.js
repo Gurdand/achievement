@@ -1,28 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Menu from './components/menu/menu';
+import JumpingPazzles from './components/jumpingPazzles/jumpingPazzles';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			select: 'menu',
+		}
+		this.changeApp = this.changeApp.bind(this);
+	}
+
+	changeApp(value) {
+		this.setState({ select: value })
+	}
+
+	render() {
+		return (
+			<div className="app">
+				{ this.state.select === 'menu' && <Menu onClick={this.changeApp} /> }
+				{ this.state.select === 'pazzle' && <JumpingPazzles onClick={this.changeApp}/> }
+			</div>
+		);
+	}
 }
 
 export default App;

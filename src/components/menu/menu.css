@@ -1,0 +1,27 @@
+.main-background {
+  width: 600px;
+  height: 900px;
+  color: wheat;
+  background: linear-gradient(to bottom right, #0a642a, rgb(0,0,0,0));
+  margin-left: calc(100% / 2 - 600px);
+}
+.main-menu {
+    width: 530px;
+    height: 900px;
+    margin: 0 auto ;
+    padding: 0px;
+    text-align: center;
+    border-width: 15px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, wheat, rgba(0,0,0,0)) 1 100%;
+    font-size: 20px;
+  }
+  #pazzle {
+    cursor: pointer;
+  }
+  .main-menu img {
+    height: 170px;
+  }
+  .main-menu p:hover {
+    text-shadow: 5px 5px 5px black;
+  }
